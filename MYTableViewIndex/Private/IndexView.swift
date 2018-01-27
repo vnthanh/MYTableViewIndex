@@ -48,14 +48,12 @@ class IndexView : UIView {
     }
     
     private func removeItem(_ item: UIView) {
-        guard let items = items else {
-            return
-        }
-        // A little trickery to make item removal look nice when performed inside animation block
+        // A little trickery to make item removal look nice when performed inside an animation block
+        // (e.g. when the keyboard shows up)
         CATransaction.setCompletionBlock {
             item.alpha = 1
             
-            if (!items.contains(item)) {
+            if let items = self.items, !items.contains(item) {
                 item.removeFromSuperview()
             }
         }
@@ -65,7 +63,8 @@ class IndexView : UIView {
     private func addItem(_ item: UIView, withFrame frame: CGRect) {
         addSubview(item)
         
-        // Make item appear with nice fade in animation when layout is called inside animation block
+        // Make the item appear with a nice fade in animation when performed inside an animation block
+        // (e.g. when the keyboard shows up)
         UIView.performWithoutAnimation {
             item.frame = frame
             item.alpha = 0
