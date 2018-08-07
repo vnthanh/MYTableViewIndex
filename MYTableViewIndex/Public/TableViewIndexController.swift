@@ -28,7 +28,7 @@ public class TableViewIndexController : NSObject {
     }
     
     // Make observer accessable
-    var observer: KeyValueObserver?
+    public var observer: KeyValueObserver?
     
     private var hidden = false
     
