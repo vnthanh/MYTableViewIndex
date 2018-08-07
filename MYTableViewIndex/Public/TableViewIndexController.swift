@@ -27,7 +27,8 @@ public class TableViewIndexController : NSObject {
         case center
     }
     
-    private var observer: KeyValueObserver?
+    // Make observer accessable
+    var observer: KeyValueObserver?
     
     private var hidden = false
     
@@ -36,7 +37,8 @@ public class TableViewIndexController : NSObject {
         super.init()
         
         observeScrollView()
-        observeKeyboard();
+        // Disable keyboard observation behavior
+        //observeKeyboard();
     }
     
     deinit {
