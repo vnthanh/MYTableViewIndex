@@ -10,7 +10,7 @@ import Foundation
 
 private var KVOContext = 0
 
-final class KeyValueObserver : NSObject {
+public class KeyValueObserver : NSObject {
     
     private weak var observedObject: NSObject?
     private let observedKeyPaths: [String]
@@ -60,7 +60,7 @@ final class KeyValueObserver : NSObject {
         observing = false
     }
     
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?,
+    override public func observeValue(forKeyPath keyPath: String?, of object: Any?,
                                change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         
         if let keyPath = keyPath , context == &KVOContext {
