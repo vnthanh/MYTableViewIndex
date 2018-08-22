@@ -49,7 +49,7 @@
 		27BDAC3CE538EAC9E60779CD /* Pods_MYTableViewIndex_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MYTableViewIndex_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5947C14CE9C89E07B48DE0C1 /* Pods-MYTableViewIndex_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYTableViewIndex_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYTableViewIndex_Tests/Pods-MYTableViewIndex_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5EEB8E8AC054B8E0F15CA367 /* Pods-MYTableViewIndex_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYTableViewIndex_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MYTableViewIndex_Tests/Pods-MYTableViewIndex_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* MYTableViewIndex_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYTableViewIndex_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD01AFB9204008FA782 /* .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = .app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* MYTableViewIndex_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYTableViewIndex_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,7 +107,7 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* MYTableViewIndex_Example.app */,
+				607FACD01AFB9204008FA782 /* .app */,
 				607FACE51AFB9204008FA782 /* MYTableViewIndex_Tests.xctest */,
 			);
 			name = Products;
@@ -197,7 +197,7 @@
 			);
 			name = MYTableViewIndex_Example;
 			productName = MYTableViewIndex;
-			productReference = 607FACD01AFB9204008FA782 /* MYTableViewIndex_Example.app */;
+			productReference = 607FACD01AFB9204008FA782 /* .app */;
 			productType = "com.apple.product-type.application";
 		};
 		607FACE41AFB9204008FA782 /* MYTableViewIndex_Tests */ = {
@@ -233,13 +233,11 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = WDCQ6B387N;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = WDCQ6B387N;
 						LastSwiftMigration = 0800;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -448,7 +446,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -501,7 +498,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -528,16 +524,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WDCQ6B387N;
 				INFOPLIST_FILE = MYTableViewIndex/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "my.MYTableViewIndex-Example";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -548,16 +538,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WDCQ6B387N;
 				INFOPLIST_FILE = MYTableViewIndex/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "my.MYTableViewIndex-Example";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -566,7 +550,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5EEB8E8AC054B8E0F15CA367 /* Pods-MYTableViewIndex_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = WDCQ6B387N;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -587,7 +571,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5947C14CE9C89E07B48DE0C1 /* Pods-MYTableViewIndex_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = WDCQ6B387N;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
